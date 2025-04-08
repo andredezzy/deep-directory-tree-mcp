@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "tsc && chmod 755 dist/index.js",
+    "prepare": "npm run build",
     "publish-patch": "npm run build && npm version patch && npm publish --access public"
   },
   "devDependencies": {
