@@ -25,7 +25,10 @@ interface TreeOptions {
  */
 function getDirectoryTree(
   rootPath: string,
-  options: TreeOptions = { depth: 3, excludePatterns: ["node_modules", ".git"] }
+  options: TreeOptions = {
+    depth: 3,
+    excludePatterns: ["node_modules", ".git", ".turbo", "dist"],
+  }
 ) {
   const tree: string[] = [];
 
@@ -65,7 +68,7 @@ function getDirectoryTree(
 }
 
 mcp.tool(
-  "get_deep_directory_tree",
+  "eget_deep_directory_tree",
   "Get deep directory tree",
   {
     path: z
@@ -76,12 +79,15 @@ mcp.tool(
         depth: z.number().default(3).describe("Depth of the directory tree"),
         excludePatterns: z
           .array(z.string())
-          .default(["node_modules", ".git"])
+          .default(["node_modules", ".git", ".turbo", "dist"])
           .describe(
             "Patterns to exclude from the tree (e.g., ['node_modules', '*.log'])"
           ),
       })
-      .default({ depth: 3, excludePatterns: ["node_modules", ".git"] })
+      .default({
+        depth: 3,
+        excludePatterns: ["node_modules", ".git", ".turbo", "dist"],
+      })
       .describe("Tree generation options"),
   },
   async ({ path, options }) => {
