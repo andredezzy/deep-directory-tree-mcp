@@ -5,10 +5,11 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "deep-filesystem-tree": "./dist/index.js"
+    "deep-filesystem-tree": "./bin/deep-filesystem-tree.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "repository": {
     "type": "git",
