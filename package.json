@@ -1,11 +1,11 @@
 {
-  "name": "deep-filesystem-tree-mcp",
+  "name": "deep-directory-tree-mcp",
   "version": "0.0.16",
-  "description": "Deep filesystem tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
+  "description": "Deep directory tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "deep-filesystem-tree": "./bin/deep-filesystem-tree.js"
+    "deep-directory-tree": "./bin/deep-directory-tree.js"
   },
   "files": [
     "dist",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andredezzy/deep-filesystem-tree-mcp.git"
+    "url": "https://github.com/andredezzy/deep-directory-tree-mcp.git"
   },
   "scripts": {
     "build": "tsc && chmod 755 dist/index.js",

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "deep-directory-tree-mcp": {
+      "command": "npx",
+      "args": ["-y", "deep-directory-tree-mcp"]
+    }
+  }
+}

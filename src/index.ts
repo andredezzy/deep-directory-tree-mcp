@@ -6,7 +6,7 @@ import path from "node:path";
 
 // Create server instance
 const mcp = new McpServer({
-  name: "deep-filesystem-tree",
+  name: "deep-directory-tree",
   version: "1.0.0",
 });
 
@@ -16,14 +16,14 @@ interface TreeOptions {
 }
 
 /**
- * Get the filesystem tree
- * @param depth - The depth of the filesystem tree
- * @returns The filesystem tree as a string with each level on a new line
+ * Get the directory tree
+ * @param depth - The depth of the directory tree
+ * @returns The directory tree as a string with each level on a new line
  * @example
  * // Returns " |-- Level 0\n |-- Level 1\n |-- Level 2"
- * getFilesystemTree(3)
+ * getDirectoryTree(3)
  */
-function getFilesystemTree(
+function getDirectoryTree(
   rootPath: string,
   options: TreeOptions = { depth: 3, excludePatterns: ["node_modules", ".git"] }
 ) {
@@ -65,18 +65,15 @@ function getFilesystemTree(
 }
 
 mcp.tool(
-  "get-deep-filesystem-tree",
-  "Get deep filesystem tree",
+  "get-deep-directory-tree",
+  "Get deep directory tree",
   {
     path: z
       .string()
-      .describe("Path to the filesystem tree (preferably absolute path)"),
+      .describe("Path to get the directory tree (preferably absolute path)"),
     options: z
       .object({
-        depth: z
-          .number()
-          .default(3)
-          .describe("Depth of the filesystem structure"),
+        depth: z.number().default(3).describe("Depth of the directory tree"),
         excludePatterns: z
           .array(z.string())
           .default(["node_modules", ".git"])
@@ -88,13 +85,13 @@ mcp.tool(
       .describe("Tree generation options"),
   },
   async ({ path, options }) => {
-    const filesystemStructure = getFilesystemTree(path, options);
+    const directoryStructure = getDirectoryTree(path, options);
 
     return {
       content: [
         {
           type: "text",
-          text: filesystemStructure,
+          text: directoryStructure,
         },
       ],
     };
@@ -106,7 +103,7 @@ async function main() {
 
   await mcp.connect(transport);
 
-  console.error("Deep Filesystem Structure MCP Server started successfully");
+  console.error("Deep Directory Tree MCP Server started successfully");
 }
 
 main().catch((error) => {

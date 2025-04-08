@@ -13,6 +13,6 @@ try {
     stdio: 'inherit'
   });
 } catch (error) {
-  console.error('Error executing deep-filesystem-tree:', error.message);
+  console.error('Error executing deep-directory-tree:', error.message);
   process.exit(1);
 } 

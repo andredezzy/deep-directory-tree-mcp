@@ -1,19 +1,19 @@
-# Deep Filesystem Tree MCP
+# Deep Directory Tree MCP
 
-[![smithery badge](https://smithery.ai/badge/deep-filesystem-tree-mcp)](https://smithery.ai/server/deep-filesystem-tree-mcp)
+[![smithery badge](https://smithery.ai/badge/deep-directory-tree-mcp)](https://smithery.ai/server/deep-directory-tree-mcp)
 
-A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization capabilities. This tool enables efficient visualization of complex directory structures, enhancing development workflows with AI-powered file system structure analysis. Compatible with any MCP-enabled client or AI assistant.
+A Model Context Protocol (MCP) implementation that provides deep directory tree visualization capabilities. This tool enables efficient visualization of complex directory structures, enhancing development workflows with AI-powered file system structure analysis. Compatible with any MCP-enabled client or AI assistant.
 
-<a href="https://glama.ai/mcp/servers/deep-filesystem-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-filesystem-tree/badge" alt="Deep Filesystem Tree MCP server" /></a>
+<a href="https://glama.ai/mcp/servers/deep-directory-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-directory-tree/badge" alt="Deep Directory Tree MCP server" /></a>
 
 ## Quick Start
 
 ### Installing via Smithery
 
-To install Deep Filesystem Tree MCP automatically via [Smithery](https://smithery.ai/server/deep-filesystem-tree-mcp):
+To install Deep Directory Tree MCP automatically via [Smithery](https://smithery.ai/server/deep-directory-tree-mcp):
 
 ```bash
-npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
+npx -y @smithery/cli install deep-directory-tree-mcp --client claude
 ```
 
 ### Installing Manually
@@ -26,11 +26,11 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 
    ```bash
    # Install globally
-   bun install -g deep-filesystem-tree-mcp
+   bun install -g deep-directory-tree-mcp
 
    # Or install locally
-   git clone https://github.com/andredezzy/deep-filesystem-tree-mcp.git
-   cd deep-filesystem-tree-mcp
+   git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
+   cd deep-directory-tree-mcp
    bun install
    ```
 
@@ -39,11 +39,10 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 
    ```json
    {
-     "name": "deep-filesystem-tree",
+     "name": "deep-directory-tree",
      "type": "mcp",
      "config": {
-       "server": "https://glama.ai/mcp/servers/deep-filesystem-tree",
-       "capabilities": ["filesystem"]
+       "server": "https://glama.ai/mcp/servers/deep-directory-tree"
      }
    }
    ```
@@ -52,7 +51,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 
    ```bash
    # If installed globally
-   deep-filesystem-tree-mcp
+   deep-directory-tree-mcp
 
    # If installed locally
    bun start
@@ -60,7 +59,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 
 ## Features
 
-- Deep filesystem tree visualization
+- Deep directory tree visualization
 - Configurable depth-based tree generation
 - Pattern-based file/directory exclusion
 - Clean and readable tree output format
@@ -72,8 +71,8 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 1. Clone and install:
 
    ```bash
-   git clone https://github.com/andredezzy/deep-filesystem-tree-mcp.git
-   cd deep-filesystem-tree-mcp
+   git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
+   cd deep-directory-tree-mcp
    bun install
    ```
 
@@ -112,7 +111,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 ## Project Structure
 
 ```
-deep-filesystem-tree-mcp/
+deep-directory-tree-mcp/
 ├── src/              # Source code
 │   └── index.ts      # Main application entry point
 ├── .gitignore        # Git ignore rules
@@ -147,4 +146,4 @@ MIT License - see LICENSE file for details.
 For support:
 
 - Open an issue in the GitHub repository
-- Check the [FAQ](https://github.com/andredezzy/deep-filesystem-tree-mcp/wiki/FAQ)
+- Check the [FAQ](https://github.com/andredezzy/deep-directory-tree-mcp/wiki/FAQ)
