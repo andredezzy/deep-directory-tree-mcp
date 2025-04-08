@@ -7,8 +7,7 @@
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
-    "prepublish": "npm run build",
-    "publish": "npm version patch && npm publish --access public"
+    "publish-patch": "npm run build && npm version patch && npm publish --access public"
   },
   "files": [
     "build"
