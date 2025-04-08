@@ -1,6 +1,6 @@
 {
   "name": "deep-directory-tree-mcp",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Deep directory tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
   "type": "module",
   "main": "dist/index.js",
