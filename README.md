@@ -171,5 +171,4 @@ MIT License - see LICENSE file for details.
 For support:
 
 - Open an issue in the GitHub repository
-- Join our [Discord community](https://discord.gg/deep-filesystem-tree)
 - Check the [FAQ](https://github.com/andredezzy/deep-filesystem-tree-mcp/wiki/FAQ)
