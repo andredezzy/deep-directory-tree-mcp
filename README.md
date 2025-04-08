@@ -115,9 +115,6 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 deep-filesystem-tree-mcp/
 ├── src/              # Source code
 │   └── index.ts      # Main application entry point
-├── .vscode/          # VS Code configuration
-├── build/            # Compiled output
-├── node_modules/     # Dependencies
 ├── .gitignore        # Git ignore rules
 ├── bun.lock          # Bun lock file
 ├── eslint.config.js  # ESLint configuration

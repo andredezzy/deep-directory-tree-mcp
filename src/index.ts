@@ -25,7 +25,7 @@ interface TreeOptions {
  */
 function getFilesystemTree(
   rootPath: string,
-  options: TreeOptions = { depth: 3, excludePatterns: ["node_modules"] }
+  options: TreeOptions = { depth: 3, excludePatterns: ["node_modules", ".git"] }
 ) {
   const tree: string[] = [];
 
@@ -68,7 +68,9 @@ mcp.tool(
   "get-deep-filesystem-tree",
   "Get deep filesystem tree",
   {
-    path: z.string().describe("Path to the filesystem tree"),
+    path: z
+      .string()
+      .describe("Path to the filesystem tree (preferably absolute path)"),
     options: z
       .object({
         depth: z
@@ -77,12 +79,12 @@ mcp.tool(
           .describe("Depth of the filesystem structure"),
         excludePatterns: z
           .array(z.string())
-          .default(["node_modules"])
+          .default(["node_modules", ".git"])
           .describe(
             "Patterns to exclude from the tree (e.g., ['node_modules', '*.log'])"
           ),
       })
-      .default({ depth: 3, excludePatterns: ["node_modules"] })
+      .default({ depth: 3, excludePatterns: ["node_modules", ".git"] })
       .describe("Tree generation options"),
   },
   async ({ path, options }) => {
