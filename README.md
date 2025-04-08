@@ -34,15 +34,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
    bun install
    ```
 
-3. **Configuration**
-
-   - Create a `.env` file in your project root:
-     ```bash
-     # Environment configuration
-     DEFAULT_WORKSPACE_PATH=/path/to/your/workspaces
-     ```
-
-4. **Add to Claude's MCP Configuration**
+3. **Add to Claude's MCP Configuration**
    Add the following to your Claude configuration:
 
    ```json
@@ -51,12 +43,12 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
      "type": "mcp",
      "config": {
        "server": "https://glama.ai/mcp/servers/deep-filesystem-tree",
-       "capabilities": ["filesystem_tree"]
+       "capabilities": ["filesystem"]
      }
    }
    ```
 
-5. **Start the Server**
+4. **Start the Server**
 
    ```bash
    # If installed globally
@@ -85,19 +77,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
    bun install
    ```
 
-2. Create environment config:
-
-   ```bash
-   cp .env.example .env
-   ```
-
-   Edit `.env` and set your workspace path:
-
-   ```bash
-   DEFAULT_WORKSPACE_PATH=/Users/yourusername/Documents/workspaces
-   ```
-
-3. Build and run:
+2. Build and run:
 
    ```bash
    # Development mode with hot reload
