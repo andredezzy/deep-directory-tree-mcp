@@ -1,6 +1,6 @@
 {
   "name": "deep-filesystem-tree-mcp",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "bin": {
     "deep-filesystem-tree": "./build/index.js"
