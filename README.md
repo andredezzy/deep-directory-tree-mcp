@@ -4,7 +4,7 @@
 
 A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization and manipulation capabilities. This tool enables efficient navigation and management of complex directory structures, enhancing development workflows with AI-powered file system operations. Compatible with any MCP-enabled client or AI assistant.
 
-<a href="https://glama.ai/mcp/servers/deep-fs-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-fs-tree/badge" alt="Deep Filesystem Tree MCP server" /></a>
+<a href="https://glama.ai/mcp/servers/deep-filesystem-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-filesystem-tree/badge" alt="Deep Filesystem Tree MCP server" /></a>
 
 ## Quick Start
 
@@ -50,7 +50,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
      "name": "deep-filesystem-tree",
      "type": "mcp",
      "config": {
-       "server": "https://glama.ai/mcp/servers/deep-fs-tree",
+       "server": "https://glama.ai/mcp/servers/deep-filesystem-tree",
        "capabilities": ["filesystem_tree", "file_operations"]
      }
    }
