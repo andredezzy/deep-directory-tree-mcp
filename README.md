@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/deep-filesystem-tree-mcp)](https://smithery.ai/server/deep-filesystem-tree-mcp)
 
-A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization and manipulation capabilities through Cursor IDE. This tool enables efficient navigation and management of complex directory structures, enhancing development workflows with AI-powered file system operations.
+A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization and manipulation capabilities. This tool enables efficient navigation and management of complex directory structures, enhancing development workflows with AI-powered file system operations. Compatible with any MCP-enabled client or AI assistant.
 
 <a href="https://glama.ai/mcp/servers/deep-fs-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-fs-tree/badge" alt="Deep Filesystem Tree MCP server" /></a>
 
