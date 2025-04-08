@@ -1,6 +1,6 @@
 {
   "name": "deep-filesystem-tree-mcp",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Deep filesystem tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
   "type": "module",
   "bin": {
