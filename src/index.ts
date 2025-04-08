@@ -68,7 +68,7 @@ function getDirectoryTree(
 }
 
 mcp.tool(
-  "eget_deep_directory_tree",
+  "get_deep_directory_tree",
   "Get deep directory tree",
   {
     path: z
