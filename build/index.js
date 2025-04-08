@@ -7,37 +7,6 @@ import path from "path";
 const mcp = new McpServer({
     name: "deep-filesystem-tree",
     version: "1.0.0",
-    capabilities: {
-        resources: {},
-        tools: {
-            "get-deep-filesystem-tree": {
-                description: "Get deep filesystem tree",
-                parameters: {
-                    path: {
-                        type: "string",
-                        description: "Path to the filesystem tree",
-                    },
-                    options: {
-                        type: "object",
-                        description: "Tree generation options",
-                        properties: {
-                            depth: {
-                                type: "number",
-                                description: "Depth of the filesystem structure",
-                                default: 3,
-                            },
-                            excludePatterns: {
-                                type: "array",
-                                items: { type: "string" },
-                                description: "Patterns to exclude from the tree (e.g., ['node_modules', '*.log'])",
-                                default: ["node_modules"],
-                            },
-                        },
-                    },
-                },
-            },
-        },
-    },
 });
 /**
  * Get the filesystem tree
