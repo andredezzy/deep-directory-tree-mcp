@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/deep-filesystem-tree-mcp)](https://smithery.ai/server/deep-filesystem-tree-mcp)
 
-A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization and manipulation capabilities. This tool enables efficient navigation and management of complex directory structures, enhancing development workflows with AI-powered file system operations. Compatible with any MCP-enabled client or AI assistant.
+A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization capabilities. This tool enables efficient visualization of complex directory structures, enhancing development workflows with AI-powered file system structure analysis. Compatible with any MCP-enabled client or AI assistant.
 
 <a href="https://glama.ai/mcp/servers/deep-filesystem-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-filesystem-tree/badge" alt="Deep Filesystem Tree MCP server" /></a>
 
@@ -51,7 +51,7 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
      "type": "mcp",
      "config": {
        "server": "https://glama.ai/mcp/servers/deep-filesystem-tree",
-       "capabilities": ["filesystem_tree", "file_operations"]
+       "capabilities": ["filesystem_tree"]
      }
    }
    ```
@@ -69,10 +69,9 @@ npx -y @smithery/cli install deep-filesystem-tree-mcp --client claude
 ## Features
 
 - Deep filesystem tree visualization
-- Intelligent file and directory operations
-- Context-aware file system navigation
-- Advanced search and filtering capabilities
-- Real-time file system monitoring
+- Configurable depth-based tree generation
+- Pattern-based file/directory exclusion
+- Clean and readable tree output format
 
 ## Detailed Setup
 
