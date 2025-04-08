@@ -1,5 +1,6 @@
 # Deep Filesystem Tree MCP
 
+
 [![smithery badge](https://smithery.ai/badge/deep-filesystem-tree-mcp)](https://smithery.ai/server/deep-filesystem-tree-mcp)
 
 A Model Context Protocol (MCP) implementation that provides deep filesystem tree visualization capabilities. This tool enables efficient visualization of complex directory structures, enhancing development workflows with AI-powered file system structure analysis. Compatible with any MCP-enabled client or AI assistant.
