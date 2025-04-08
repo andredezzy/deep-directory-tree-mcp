@@ -1,0 +1,28 @@
+{
+  "name": "deep-filesystem-tree-mcp",
+  "type": "module",
+  "bin": {
+    "deep-filesystem-tree": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/bun": "latest",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.29.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.2"
+  }
+}
