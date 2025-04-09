@@ -44,7 +44,7 @@ Built with:
 - [Node.js](https://nodejs.org) (v18 or higher)
 - [Bun Runtime](https://bun.sh) (required)
 
-### Option 1: Smithery Installation (Recommended)
+### Smithery Installation
 
 The easiest way to get started is using [Smithery](https://smithery.ai/server/deep-directory-tree-mcp):
 
@@ -52,23 +52,9 @@ The easiest way to get started is using [Smithery](https://smithery.ai/server/de
 npx -y @smithery/cli install deep-directory-tree-mcp --client cursor
 ```
 
-### Option 2: Manual Installation
+### Manual Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
-cd deep-directory-tree-mcp
-
-# Install dependencies
-bun install
-
-# Build the project
-bun run build
-```
-
-## Configuration
-
-### Cursor IDE Setup
+#### Cursor IDE Setup
 
 1. Open Cursor Settings → MCP → Add new MCP server
 2. Configure with these settings:
@@ -82,7 +68,7 @@ bun run build
    }
    ```
 
-### Claude Desktop Setup
+#### Claude Desktop Setup
 
 Add the following to your MCP configuration:
 
@@ -90,8 +76,8 @@ Add the following to your MCP configuration:
 {
   "mcpServers": {
     "deep-directory-tree": {
-      "command": "node",
-      "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
+      "command": "npx",
+      "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
     }
   }
 }
@@ -108,10 +94,14 @@ Common commands for AI assistants:
 ## Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
+cd deep-directory-tree-mcp
+
 # Install dependencies
 bun install
 
-# Build for production
+# Build the project
 bun run build
 ```
 
