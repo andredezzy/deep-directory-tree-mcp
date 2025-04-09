@@ -7,14 +7,14 @@
 </span>
 
 <span class="badge-npm-version">
-  <a href="https://npmjs.org/package/deep-directory-tree-mcp" title="View this project on NPM">
-    <img src="https://img.shields.io/npm/v/deep-directory-tree-mcp.svg" alt="NPM Version" />
+  <a href="https://npmjs.org/package/@andredezzy/deep-directory-tree-mcp" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/v/%40andredezzy%2Fdeep-directory-tree-mcp.svg" alt="NPM Version" />
   </a>
 </span>
 
 <span class="badge-npm-downloads">
-  <a href="https://npmjs.org/package/deep-directory-tree-mcp" title="View this project on NPM">
-    <img src="https://img.shields.io/npm/dm/deep-directory-tree-mcp.svg" alt="NPM Downloads" />
+  <a href="https://npmjs.org/package/@andredezzy/deep-directory-tree-mcp" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/dm/%40andredezzy%2Fdeep-directory-tree-mcp" alt="NPM Downloads" />
   </a>
 </span>
 
