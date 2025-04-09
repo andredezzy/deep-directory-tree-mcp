@@ -109,16 +109,33 @@ bun install
 bun run build
 ```
 
-## Project Structure
+### Cursor IDE Setup
 
-```
-deep-directory-tree-mcp/
-├── src/              # Source code
-│   └── index.ts      # Main entry point
-├── bin/              # Binary executables
-├── dist/             # Compiled output
-├── .vscode/          # VS Code configuration
-└── [Configuration files]
+1. Open Cursor Settings → MCP → Add new MCP server
+2. Configure with these settings:
+
+   ```json
+   {
+     "@andredezzy/deep-directory-tree-mcp": {
+       "command": "node",
+       "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
+     }
+   }
+   ```
+
+### Claude Desktop Setup
+
+Add the following to your MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "deep-directory-tree": {
+      "command": "node",
+      "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
+    }
+  }
+}
 ```
 
 ## Contributing
