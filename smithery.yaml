@@ -10,9 +10,6 @@ startCommand:
     (config) => ({
       "command": "node",
       "args": [
-        "dist/index.js"
-      ],
-      "env": {
-        ...
-      }
+        "bin/deep-directory-tree.js"
+      ]
     })
