@@ -1,7 +1,7 @@
 {
   "name": "@andredezzy/deep-directory-tree-mcp",
   "version": "1.0.1",
-  "description": "Deep directory tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
+  "description": "A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures, enabling AI assistants to understand and navigate project structures efficiently.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
