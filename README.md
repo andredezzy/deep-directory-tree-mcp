@@ -35,7 +35,7 @@ Built with:
 The easiest way to get started is using [Smithery](https://smithery.ai/server/deep-directory-tree-mcp):
 
 ```bash
-npx -y @smithery/cli install deep-directory-tree-mcp --client cursor
+npx -y @smithery/cli install @andredezzy/deep-directory-tree-mcp --client cursor
 ```
 
 ### Manual Installation
