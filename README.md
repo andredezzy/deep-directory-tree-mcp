@@ -46,7 +46,6 @@ Built with:
 ### Prerequisites
 
 - [Node.js](https://nodejs.org) (v18 or higher)
-- [Bun Runtime](https://bun.sh) (required)
 
 ### Smithery Installation
 
@@ -96,6 +95,10 @@ Common commands for AI assistants:
 - "Show files excluding test directories"
 
 ## Development
+
+### Prerequisites
+
+- [Bun Runtime](https://bun.sh) (required)
 
 ```bash
 # Clone the repository
