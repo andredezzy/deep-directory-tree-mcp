@@ -19,6 +19,7 @@
 </span>
 
 <br />
+<br />
 
 A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures. Why? Now you can let AI assistants understand and navigate your project structure efficiently, enabling smarter code navigation and project organization insights.
 
