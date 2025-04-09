@@ -25,7 +25,6 @@ A powerful Model Context Protocol (MCP) implementation for visualizing and analy
 
 Built with:
 
-- [Bun Runtime](https://bun.sh)
 - [Anthropic MCP](https://docs.anthropic.com/claude/docs/mcp-getting-started)
 - [Cursor](https://cursor.sh)
 
