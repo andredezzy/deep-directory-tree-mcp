@@ -78,7 +78,7 @@ Add the following to your MCP configuration:
 ```json
 {
   "mcpServers": {
-    "deep-directory-tree": {
+    "@andredezzy/deep-directory-tree": {
       "command": "npx",
       "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
     }
@@ -135,7 +135,7 @@ Add the following to your MCP configuration:
 ```json
 {
   "mcpServers": {
-    "deep-directory-tree": {
+    "@andredezzy/deep-directory-tree": {
       "command": "node",
       "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
     }
