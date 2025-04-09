@@ -47,7 +47,7 @@ npx -y @smithery/cli install deep-directory-tree-mcp --client cursor
 
    ```json
    {
-     "@andredezzy/deep-directory-tree-mcp": {
+     "deep-directory-tree": {
        "command": "npx",
        "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
      }
@@ -61,7 +61,7 @@ Add the following to your MCP configuration:
 ```json
 {
   "mcpServers": {
-    "@andredezzy/deep-directory-tree": {
+    "deep-directory-tree": {
       "command": "npx",
       "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
     }
@@ -104,7 +104,7 @@ bun run build
 
    ```json
    {
-     "@andredezzy/deep-directory-tree-mcp": {
+     "deep-directory-tree": {
        "command": "node",
        "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
      }
@@ -118,7 +118,7 @@ Add the following to your MCP configuration:
 ```json
 {
   "mcpServers": {
-    "@andredezzy/deep-directory-tree": {
+    "deep-directory-tree": {
       "command": "node",
       "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
     }
