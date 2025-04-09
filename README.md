@@ -41,7 +41,7 @@ Built with:
 
 ![Cursor + Deep Directory Tree MCP Demo](./cursor-demo.gif)
 
-## Installation & Setup
+## Quick Start
 
 ### Prerequisites
 
