@@ -112,7 +112,9 @@ bun install
 bun run build
 ```
 
-### Cursor IDE Setup
+### Development Manual Installation
+
+#### Cursor IDE Setup
 
 1. Open Cursor Settings → MCP → Add new MCP server
 2. Configure with these settings:
@@ -126,7 +128,7 @@ bun run build
    }
    ```
 
-### Claude Desktop Setup
+#### Claude Desktop Setup
 
 Add the following to your MCP configuration:
 
