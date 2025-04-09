@@ -7,16 +7,18 @@
 </span>
 
 <span class="badge-npm-version">
-  <a href="https://npmjs.org/package/badges" title="View this project on NPM">
-    <img src="https://img.shields.io/npm/v/badges.svg" alt="NPM Version" />
+  <a href="https://npmjs.org/package/deep-directory-tree-mcp" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/v/deep-directory-tree-mcp.svg" alt="NPM Version" />
   </a>
 </span>
 
 <span class="badge-npm-downloads">
-  <a href="https://npmjs.org/package/badges" title="View this project on NPM">
-    <img src="https://img.shields.io/npm/dm/badges.svg" alt="NPM Downloads" />
+  <a href="https://npmjs.org/package/deep-directory-tree-mcp" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/dm/deep-directory-tree-mcp.svg" alt="NPM Downloads" />
   </a>
 </span>
+
+<br />
 
 A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures. Why? Now you can let AI assistants understand and navigate your project structure efficiently, enabling smarter code navigation and project organization insights.
 
