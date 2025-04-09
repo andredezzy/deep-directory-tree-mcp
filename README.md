@@ -30,12 +30,12 @@ Built with:
 
 ## Features
 
-- 🔍 Deep directory tree visualization
-- ⚙️ Configurable depth-based tree generation
-- 🚫 Smart pattern-based file/directory exclusion
-- 📊 Clean and readable tree output format
-- 🔄 Real-time directory structure updates
-- 🎯 Targeted directory analysis
+- Deep directory tree visualization
+- Configurable depth-based tree generation
+- Smart pattern-based file/directory exclusion
+- Clean and readable tree output format
+- Real-time directory structure updates
+- Targeted directory analysis
 
 **DEMO:**
 
