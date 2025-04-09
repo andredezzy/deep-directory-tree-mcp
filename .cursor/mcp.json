@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "deep-directory-tree": {
+      "command": "npx",
+      "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    }
+  }
+}

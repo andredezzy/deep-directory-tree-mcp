@@ -22,7 +22,7 @@ Built with:
 
 **DEMO:**
 
-![Cursor + Deep Directory Tree MCP Demo](./cursor-demo.gif)
+![Cursor + Deep Directory Tree MCP Demo](./cursor-demo.mp4)
 
 ## Quick Start
 
