@@ -1,5 +1,5 @@
 {
-  "name": "deep-directory-tree-mcp",
+  "name": "@andredezzy/deep-directory-tree-mcp",
   "version": "0.0.23",
   "description": "Deep directory tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
   "type": "module",

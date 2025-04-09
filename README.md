@@ -1,133 +1,148 @@
-# Deep Directory Tree MCP
+# Deep Directory Tree MCP 🌳
 
 [![smithery badge](https://smithery.ai/badge/deep-directory-tree-mcp)](https://smithery.ai/server/deep-directory-tree-mcp)
 
-A Model Context Protocol (MCP) implementation that provides deep directory tree visualization capabilities. This tool enables efficient visualization of complex directory structures, enhancing development workflows with AI-powered file system structure analysis. Compatible with any MCP-enabled client or AI assistant.
+A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures. Why? Now you can let AI assistants understand and navigate your project structure efficiently, enabling smarter code navigation and project organization insights.
 
-<a href="https://glama.ai/mcp/servers/deep-directory-tree"><img width="380" height="200" src="https://glama.ai/mcp/servers/deep-directory-tree/badge" alt="Deep Directory Tree MCP server" /></a>
+Built with:
 
-## Quick Start
+- [Bun Runtime](https://bun.sh)
+- [Anthropic MCP](https://docs.anthropic.com/claude/docs/mcp-getting-started)
+- [Cursor](https://cursor.sh)
 
-### Installing via Smithery
+## Features
 
-To install Deep Directory Tree MCP automatically via [Smithery](https://smithery.ai/server/deep-directory-tree-mcp):
+- 🔍 Deep directory tree visualization
+- ⚙️ Configurable depth-based tree generation
+- 🚫 Smart pattern-based file/directory exclusion
+- 📊 Clean and readable tree output format
+- 🔄 Real-time directory structure updates
+- 🎯 Targeted directory analysis
+
+## Installation & Setup
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (v18 or higher)
+- [Bun Runtime](https://bun.sh) (required)
+
+### Option 1: Smithery Installation (Recommended)
+
+The easiest way to get started is using [Smithery](https://smithery.ai/server/deep-directory-tree-mcp):
 
 ```bash
-npx -y @smithery/cli install deep-directory-tree-mcp --client claude
+npx -y @smithery/cli install deep-directory-tree-mcp --client cursor
 ```
 
-### Installing Manually
+### Option 2: Manual Installation
 
-1. **Prerequisites**
+```bash
+# Clone the repository
+git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
+cd deep-directory-tree-mcp
 
-   - [Bun](https://bun.sh) runtime
+# Install dependencies
+bun install
 
-2. **Installation**
+# Build the project
+bun run build
+```
 
-   ```bash
-   # Install globally
-   bun install -g deep-directory-tree-mcp
+## Configuration
 
-   # Or install locally
-   git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
-   cd deep-directory-tree-mcp
-   bun install
-   ```
+### Cursor IDE Setup
 
-3. **Add to Claude's MCP Configuration**
-   Add the following to your Claude configuration:
-
+1. Open Cursor Settings → MCP → Add new MCP server
+2. Configure with these settings:
    ```json
    {
-     "name": "deep-directory-tree",
-     "type": "mcp",
-     "config": {
-       "server": "https://glama.ai/mcp/servers/deep-directory-tree"
+     "deep-directory-tree-mcp": {
+       "command": "npx",
+       "args": ["-y", "@andredezzy/deep-directory-tree-mcp"],
+       "options": {
+         "depth": 3,
+         "excludePatterns": ["node_modules", ".git", "dist", ".next"]
+       }
      }
    }
    ```
 
-4. **Start the Server**
+### Claude Desktop Setup
+
+Add the following to your MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "deep-directory-tree": {
+      "command": "node",
+      "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/dist/index.js"],
+      "options": {
+        "depth": 3,
+        "excludePatterns": ["node_modules", ".git", "dist", ".next"]
+      }
+    }
+  }
+}
+```
+
+## Usage
+
+1. Start the server:
 
    ```bash
    # If installed globally
    deep-directory-tree-mcp
 
-   # If installed locally
+   # If installed locally with npm
+   npx deep-directory-tree-mcp
+
+   # If using Bun
    bun start
    ```
 
-## Features
+2. Example usage in your AI assistant:
 
-- Deep directory tree visualization
-- Configurable depth-based tree generation
-- Pattern-based file/directory exclusion
-- Clean and readable tree output format
-
-## Detailed Setup
-
-### Local Development Setup
-
-1. Clone and install:
-
-   ```bash
-   git clone https://github.com/andredezzy/deep-directory-tree-mcp.git
-   cd deep-directory-tree-mcp
-   bun install
+   ```typescript
+   // Configure tree visualization
+   {
+     depth: 3,
+     excludePatterns: ["node_modules", ".git", "dist"]
+   }
    ```
 
-2. Build and run:
+3. Common commands for AI assistants:
+   - "Show me the directory structure"
+   - "Visualize project tree up to depth 4"
+   - "Show files excluding test directories"
 
-   ```bash
-   # Development mode with hot reload
-   bun dev
+## Development
 
-   # Production mode
-   bun build
-   bun start
-   ```
+```bash
+# Install dependencies
+bun install
 
-### Troubleshooting
+# Start development server
+bun dev
 
-1. **Tree Visualization Issues**
+# Build for production
+bun build
 
-   - Ensure proper file permissions
-   - Check workspace path configuration
-   - Verify file system event listeners are active
-
-2. **Permission Issues**
-
-   - Run with appropriate user permissions
-   - Check file system access rights
-   - Verify workspace directory permissions
-
-3. **Runtime Issues**
-   - Make sure Bun is installed and up to date:
-     ```bash
-     curl -fsSL https://bun.sh/install | bash
-     bun upgrade
-     ```
+# Run tests
+bun test
+```
 
 ## Project Structure
 
 ```
 deep-directory-tree-mcp/
 ├── src/              # Source code
-│   └── index.ts      # Main application entry point
-├── .gitignore        # Git ignore rules
-├── bun.lock          # Bun lock file
-├── eslint.config.js  # ESLint configuration
-├── index.ts          # Root entry point
-├── package.json      # Project configuration and dependencies
-├── smithery.yaml     # Smithery configuration
-└── tsconfig.json     # TypeScript configuration
+│   └── index.ts      # Main entry point
+├── bin/              # Binary executables
+├── dist/             # Compiled output
+├── .vscode/          # VS Code configuration
+└── [Configuration files]
 ```
-
-## Scripts
-
-- `bun build` - Build the project
-- `bun start` - Run production server
-- `bun dev` - Start development server with hot-reload
 
 ## Contributing
 
@@ -137,13 +152,14 @@ deep-directory-tree-mcp/
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-MIT License - see LICENSE file for details.
-
 ## Support
 
-For support:
+Need help? Try these resources:
 
-- Open an issue in the GitHub repository
-- Check the [FAQ](https://github.com/andredezzy/deep-directory-tree-mcp/wiki/FAQ)
+- [Open an issue](https://github.com/andredezzy/deep-directory-tree-mcp/issues)
+- [FAQ Wiki](https://github.com/andredezzy/deep-directory-tree-mcp/wiki/FAQ)
+- [Documentation](https://github.com/andredezzy/deep-directory-tree-mcp/wiki)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
