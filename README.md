@@ -1,6 +1,22 @@
 # Deep Directory Tree MCP 🌳
 
-[![smithery badge](https://smithery.ai/badge/deep-directory-tree-mcp)](https://smithery.ai/server/deep-directory-tree-mcp)
+<span class="badge-smithery">
+  <a href="https://smithery.ai/server/deep-directory-tree-mcp">
+    <img src="https://smithery.ai/badge/deep-directory-tree-mcp" alt="Smithery Tool Calls" />
+  </a>
+</span>
+
+<span class="badge-npm-version">
+  <a href="https://npmjs.org/package/badges" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/v/badges.svg" alt="NPM Version" />
+  </a>
+</span>
+
+<span class="badge-npm-downloads">
+  <a href="https://npmjs.org/package/badges" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/dm/badges.svg" alt="NPM Downloads" />
+  </a>
+</span>
 
 A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures. Why? Now you can let AI assistants understand and navigate your project structure efficiently, enabling smarter code navigation and project organization insights.
 
@@ -54,15 +70,12 @@ bun run build
 
 1. Open Cursor Settings → MCP → Add new MCP server
 2. Configure with these settings:
+
    ```json
    {
-     "deep-directory-tree-mcp": {
+     "@andredezzy/deep-directory-tree-mcp": {
        "command": "npx",
-       "args": ["-y", "@andredezzy/deep-directory-tree-mcp"],
-       "options": {
-         "depth": 3,
-         "excludePatterns": ["node_modules", ".git", "dist", ".next"]
-       }
+       "args": ["-y", "@andredezzy/deep-directory-tree-mcp"]
      }
    }
    ```
@@ -76,11 +89,7 @@ Add the following to your MCP configuration:
   "mcpServers": {
     "deep-directory-tree": {
       "command": "node",
-      "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/dist/index.js"],
-      "options": {
-        "depth": 3,
-        "excludePatterns": ["node_modules", ".git", "dist", ".next"]
-      }
+      "args": ["ABSOLUTE_PATH_TO_MCP_SERVER/bin/deep-directory-tree.js"]
     }
   }
 }
@@ -88,33 +97,11 @@ Add the following to your MCP configuration:
 
 ## Usage
 
-1. Start the server:
+Common commands for AI assistants:
 
-   ```bash
-   # If installed globally
-   deep-directory-tree-mcp
-
-   # If installed locally with npm
-   npx deep-directory-tree-mcp
-
-   # If using Bun
-   bun start
-   ```
-
-2. Example usage in your AI assistant:
-
-   ```typescript
-   // Configure tree visualization
-   {
-     depth: 3,
-     excludePatterns: ["node_modules", ".git", "dist"]
-   }
-   ```
-
-3. Common commands for AI assistants:
-   - "Show me the directory structure"
-   - "Visualize project tree up to depth 4"
-   - "Show files excluding test directories"
+- "Show me the directory structure"
+- "Visualize project tree up to depth 4"
+- "Show files excluding test directories"
 
 ## Development
 
@@ -122,14 +109,8 @@ Add the following to your MCP configuration:
 # Install dependencies
 bun install
 
-# Start development server
-bun dev
-
 # Build for production
-bun build
-
-# Run tests
-bun test
+bun run build
 ```
 
 ## Project Structure
