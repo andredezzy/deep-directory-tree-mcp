@@ -37,6 +37,10 @@ Built with:
 - 🔄 Real-time directory structure updates
 - 🎯 Targeted directory analysis
 
+**DEMO:**
+
+![Cursor + Deep Directory Tree MCP Demo](./cursor-demo.gif)
+
 ## Installation & Setup
 
 ### Prerequisites
