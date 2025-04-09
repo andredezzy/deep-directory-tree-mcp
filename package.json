@@ -1,7 +1,7 @@
 {
   "name": "@andredezzy/deep-directory-tree-mcp",
   "version": "1.0.1",
-  "description": "Powerful Model Context Protocol (MCP) for visualizing directory structures with real-time updates, configurable depth, and smart exclusions for efficient project navigation",
+  "description": "Powerful Model Context Protocol (MCP) implementation for visualizing directory structures with real-time updates, configurable depth, and smart exclusions for efficient project navigation",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
