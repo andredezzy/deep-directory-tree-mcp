@@ -1,6 +1,6 @@
 {
   "name": "@andredezzy/deep-directory-tree-mcp",
-  "version": "0.0.24",
+  "version": "1.0.0",
   "description": "Deep directory tree visualization tool enabling efficient visualization of complex directory structures with AI-powered analysis capabilities.",
   "type": "module",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc && chmod 755 dist/index.js",
-    "publish-patch": "npm run build && npm version patch && npm publish --access public"
+    "publish-patch": "npm version patch && npm run build && npm publish --access public"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
