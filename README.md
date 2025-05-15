@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/andredezzy-deep-directory-tree-mcp-badge.png)](https://mseep.ai/app/andredezzy-deep-directory-tree-mcp)
+
 # Deep Directory Tree MCP 🌳
 
 [![Smithery Tool Calls](https://smithery.ai/badge/deep-directory-tree-mcp)](https://smithery.ai/server/deep-directory-tree-mcp)
