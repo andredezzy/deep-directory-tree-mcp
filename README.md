@@ -6,6 +6,10 @@
 
 A powerful Model Context Protocol (MCP) implementation for visualizing and analyzing directory structures. Why? Now you can let AI assistants understand and navigate your project structure efficiently, enabling smarter code navigation and project organization insights.
 
+<a href="https://glama.ai/mcp/servers/@andredezzy/deep-filesystem-tree-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@andredezzy/deep-filesystem-tree-mcp/badge" alt="deep-filesystem-tree MCP server" />
+</a>
+
 Built with:
 
 - [Anthropic MCP](https://docs.anthropic.com/claude/docs/mcp-getting-started)
