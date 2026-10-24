@@ -1,6 +1,6 @@
 # Deep Directory Tree MCP 🌳
 
-[![Smithery Tool Calls](https://smithery.ai/badge/deep-directory-tree-mcp)](https://smithery.ai/server/deep-directory-tree-mcp)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.andredezzy/deep-directory-tree-mcp)](https://lightnow.ai/servers/io.github.andredezzy/deep-directory-tree-mcp)
 [![NPM Version](https://img.shields.io/npm/v/%40andredezzy%2Fdeep-directory-tree-mcp.svg)](https://npmjs.org/package/@andredezzy/deep-directory-tree-mcp)
 [![NPM Downloads](https://img.shields.io/npm/dm/%40andredezzy%2Fdeep-directory-tree-mcp)](https://npmjs.org/package/@andredezzy/deep-directory-tree-mcp)
 
